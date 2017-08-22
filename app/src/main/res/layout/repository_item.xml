@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="repository"
+            type="br.com.brsantiago.gituser.domain.Repository" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_padding">
+
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/default_padding">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorTitle"
+                android:textStyle="bold"
+                android:textSize="@dimen/pref_text_size"
+                android:text="@{repository.name}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/colorLanguage"
+                android:textSize="@dimen/default_text_size"
+                android:text="@{repository.language}" />
+            </LinearLayout>
+    </RelativeLayout>
+</layout>

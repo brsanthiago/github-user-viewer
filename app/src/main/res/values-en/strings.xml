@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_name">Enter username</string>
+    <string name="search">Search</string>
+    <string name="github_viewer">GitHub Viewer</string>
+</resources>
